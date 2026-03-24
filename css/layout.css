@@ -1,0 +1,294 @@
+/* ============================================
+   layout.css — Nav, Hero, Section commons
+   ============================================ */
+
+/* ── NAV ── */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 3rem;
+  border-bottom: 1px solid var(--border);
+  background: rgba(12,15,10,0.85);
+  backdrop-filter: blur(12px);
+}
+
+.nav-logo {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.8rem;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover { color: var(--accent); }
+
+/* ── HERO ── */
+.hero {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 7rem 3rem 5rem;
+  gap: 4rem;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 20%;
+  right: 0;
+  width: 40vw;
+  height: 40vw;
+  background: radial-gradient(circle, rgba(181,242,60,0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.8rem;
+  color: var(--accent);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.hero-label::before {
+  content: '';
+  display: block;
+  width: 2rem;
+  height: 1px;
+  background: var(--accent);
+}
+
+.hero-title-role {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  color: var(--accent);
+  font-style: italic;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+}
+
+h1 em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+.hero-description {
+  color: var(--muted);
+  font-size: 1rem;
+  max-width: 480px;
+  margin-bottom: 2.5rem;
+  line-height: 1.8;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: all 0.2s;
+  font-family: 'Outfit', sans-serif;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #0c0f0a;
+}
+
+.btn-primary:hover {
+  background: #c8ff4a;
+  transform: translateY(-1px);
+}
+
+.btn-ghost {
+  border: 1px solid var(--border);
+  color: var(--text);
+  background: transparent;
+}
+
+.btn-ghost:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.btn-cv {
+  border: 1px solid var(--accent-dim);
+  color: var(--accent);
+  background: rgba(181,242,60,0.06);
+}
+
+.btn-cv:hover {
+  background: rgba(181,242,60,0.12);
+  transform: translateY(-1px);
+}
+
+/* Hero right panel */
+.hero-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.stat-card {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1.5rem 2rem;
+  background: var(--card);
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s;
+}
+
+.stat-card:hover { border-color: var(--accent-dim); }
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--accent);
+  opacity: 0.6;
+}
+
+.stat-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  color: var(--muted);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.stat-value {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.6rem;
+  color: var(--text);
+}
+
+.stat-sub {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 0.25rem;
+}
+
+/* ── SECTION COMMONS ── */
+section {
+  padding: 6rem 3rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.section-header {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.section-num {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+}
+
+h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 400;
+  color: var(--text);
+}
+
+/* ── THEME SWITCHER ── */
+.theme-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: rgba(255,255,255,0.03);
+}
+
+.theme-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  transition: transform 0.2s, border-color 0.2s;
+  padding: 0;
+}
+
+.theme-dot:hover { transform: scale(1.2); }
+
+.theme-dot.active {
+  border-color: var(--text);
+  transform: scale(1.15);
+}
+
+.theme-dot--green  { background: #b5f23c; }
+.theme-dot--red    { background: #f23c3c; }
+.theme-dot--mono   { background: #e8e8e8; }
+
+/* ── FOOTER ── */
+footer {
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-copy {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+}

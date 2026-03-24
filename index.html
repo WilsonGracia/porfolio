@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wilson Muñoz — Portfolio</title>
+  <link rel="stylesheet" href="css/variables.css"/>
+  <link rel="stylesheet" href="css/layout.css"/>
+  <link rel="stylesheet" href="css/components.css"/>
+  <link rel="stylesheet" href="css/animations.css"/>
+</head>
+<body>
+
+  <!-- ══ NAV ══ -->
+  <nav>
+    <div class="nav-logo">WMG / Portfolio</div>
+    <ul class="nav-links">
+      <li><a href="#about">Perfil</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#experience">Experiencia</a></li>
+      <li><a href="#certs">Certificaciones</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+    <div class="theme-switcher">
+      <button class="theme-dot theme-dot--green active" data-theme="green" title="Verde (default)" aria-label="Tema verde"></button>
+      <button class="theme-dot theme-dot--red" data-theme="red" title="Rojo y blanco" aria-label="Tema rojo"></button>
+      <button class="theme-dot theme-dot--mono" data-theme="mono" title="Blanco y negro" aria-label="Tema monocromático"></button>
+    </div>
+  </nav>
+
+  <!-- ══ HERO ══ -->
+  <section class="hero">
+    <div>
+      <div class="hero-label">Disponible · Costa Rica</div>
+      <div class="hero-title-role">Ingeniero en Sistemas de Información</div>
+      <h1>Wilson<br><em>Muñoz</em><br>Gracia</h1>
+      <p class="hero-description">
+        Backend Developer · ISO/IEC 27001 Lead Auditor.<br>
+        Construyo sistemas robustos, seguros y orientados a negocio —
+        desde módulos financieros hasta plataformas de empleo público.
+      </p>
+      <div class="hero-ctas">
+        <a href="https://github.com/WilsonGracia" target="_blank" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.74-1.33-1.74-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/wilsongracia" target="_blank" class="btn btn-ghost">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+          LinkedIn
+        </a>
+        <a href="assets/cv/wilson-munoz-cv.pdf" download class="btn btn-cv">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 16l-4-4h2.5V4h3v8H16l-4 4zm-7 2h14v2H5v-2z"/></svg>
+          Descargar CV
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat-card">
+        <div class="stat-label">Especialización</div>
+        <div class="stat-value">Backend Dev</div>
+        <div class="stat-sub">NestJS · TypeScript · React · PostgreSQL</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Seguridad de la Información</div>
+        <div class="stat-value">ISO 27001</div>
+        <div class="stat-sub">Foundation · Internal Auditor · Lead Auditor</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Disponibilidad</div>
+        <div class="stat-value">Disponible</div>
+        <div class="stat-sub">Costa Rica · Remoto</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ ABOUT ══ -->
+  <section id="about">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2>Perfil</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          Soy un <strong>Ingeniero en Sistemas de Información</strong> de la Universidad Nacional de Costa Rica,
+          enfocado en el desarrollo de software y en la aplicación de buenas prácticas de seguridad de la información.
+          Construyo sistemas modulares, trazables y seguros trabajando a lo largo de todo el stack: backend con
+          <strong>NestJS y TypeScript</strong>, frontend con <strong>React</strong>, y bases de datos relacionales con <strong>PostgreSQL</strong>.
+        </p>
+        <p>
+          He desarrollado módulos financieros (cuentas por cobrar y pagar), sistemas institucionales de gestión
+          y actualmente lidero el desarrollo de una <strong>plataforma de empleo para organizaciones públicas</strong>.
+          También construí una herramienta para <strong>importar controles ISO 27001 a PostgreSQL</strong>,
+          facilitando la automatización de procesos de auditoría.
+        </p>
+        <p>
+          Mi enfoque combina la ingeniería de software con una mentalidad orientada a la seguridad —
+          cuento con certificaciones como <strong>Lead Auditor, Internal Auditor y Foundation ISO/IEC 27001:2022</strong>.
+        </p>
+      </div>
+      <div>
+        <p style="font-family:'DM Mono',monospace;font-size:0.65rem;color:var(--muted);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:1rem;">Stack técnico</p>
+        <div class="skills-grid">
+          <span class="skill-tag">NestJS</span>
+          <span class="skill-tag">TypeScript</span>
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">TypeORM</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">HTML / CSS</span>
+          <span class="skill-tag">Git / GitHub</span>
+          <span class="skill-tag">MySQL · SQL</span>
+          <span class="skill-tag">PL/SQL</span>
+          <span class="skill-tag">C++</span>
+          <span class="skill-tag">ISO 27001</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PROJECTS ══ -->
+  <section id="projects">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2>Proyectos</h2>
+    </div>
+
+    <!-- Tabs -->
+    <div class="projects-tabs">
+      <button class="tab-btn active" data-tab="panel-profesional">Profesionales</button>
+      <button class="tab-btn" data-tab="panel-propios">Propios</button>
+    </div>
+
+    <!-- Panel: Proyectos Profesionales -->
+    <div class="projects-panel active" id="panel-profesional">
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <span class="project-badge badge-done">Completado</span>
+          <div class="project-title">Módulo Financiero — AnalyticaHub</div>
+          <p class="project-desc">
+            Formé parte del desarrollo de un módulo financiero empresarial enfocado en cuentas por cobrar y pagar, contribuyendo
+			a la construcción de una solución sólida, escalable y orientada a la trazabilidad de operaciones.
+			Colaboré en el diseño de la base de datos, optimizando estructuras y consultas para mejorar el rendimiento y la
+			eficiencia del sistema. Implementé servicios backend utilizando NestJS, TypeScript y TypeORM, desarrollando endpoints
+			seguros bajo una arquitectura modular clara y mantenible.
+			Aseguré la consistencia de la información financiera mediante el uso de transacciones controladas, garantizando la
+			integridad de los datos en procesos críticos. Este proyecto fortaleció mi experiencia en desarrollo backend,
+			diseño de sistemas y trabajo colaborativo en entornos reales.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">NestJS</span>
+            <span class="stack-tag">TypeScript</span>
+            <span class="stack-tag">PostgreSQL</span>
+            <span class="stack-tag">TypeORM</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <span class="project-badge badge-done">Completado</span>
+          <div class="project-title">Sistema de Gestión Institucional</div>
+          <p class="project-desc">
+            Formé parte del equipo de desarrollo de un sistema integral de gestión institucional para el Centro Educativo San Isidro Labrador,
+			encargado de administrar procesos académicos y operativos.
+			Participé en el diseño y modelado de la base de datos en PostgreSQL, definiendo estructuras eficientes y optimizando consultas para garantizar un manejo ágil de la información.
+			Contribuí al desarrollo full-stack utilizando Java, JavaScript, HTML y CSS, implementando funcionalidades clave para la gestión de personal docente y administrativo, estudiantes, matrículas, notas y expedientes académicos.
+			Además, participé en la ejecución de pruebas funcionales, asegurando la calidad, estabilidad y correcto funcionamiento del sistema en distintos escenarios de uso.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">PostgreSQL</span>
+            <span class="stack-tag">HTML / CSS</span>
+            <span class="stack-tag">JavaScript</span>
+            <span class="stack-tag">Java</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Panel: Proyectos Propios -->
+    <div class="projects-panel" id="panel-propios">
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <span class="project-badge badge-active">En desarrollo</span>
+          <div class="project-title">Plataforma de Empleo Público</div>
+          <p class="project-desc">
+            Plataforma web diseñada para que organizaciones del sector público gestionen procesos
+            de reclutamiento y selección de personal. Módulos de publicación de vacantes,
+            postulaciones, filtros y seguimiento de candidatos. Proyecto actualmente en desarrollo,
+            información limitada por confidencialidad.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">NestJS</span>
+            <span class="stack-tag">TypeScript</span>
+            <span class="stack-tag">React</span>
+            <span class="stack-tag">PostgreSQL</span>
+            <span class="stack-tag">TypeORM</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/WilsonGracia/propuesta-dgsc" target="_blank" class="project-link">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.74-1.33-1.74-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              Ver repo →
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <span class="project-badge badge-done">Completado</span>
+          <div class="project-title">Export2BD — Exportador de Controles ISO 27001</div>
+
+          <div class="project-screenshots project-screenshots--contain">
+            <img
+              src="https://raw.githubusercontent.com/WilsonGracia/export2bd/main/settingsview.png"
+              alt="Vista de configuración — Export2BD"
+              title="Settings view"
+            />
+            <img
+              src="https://raw.githubusercontent.com/WilsonGracia/export2bd/main/exportview.png"
+              alt="Vista de exportación — Export2BD"
+              title="Export view"
+            />
+          </div>
+
+          <p class="project-desc">
+            Herramienta de escritorio que permite exportar datos desde archivos Excel (.xlsx)
+            a bases de datos PostgreSQL sin conocimientos técnicos. Diseñada para gestionar
+            catálogos de controles ISO 27001 directamente desde una hoja de cálculo.
+          </p>
+
+          <div class="project-stack">
+            <span class="stack-tag">NestJS</span>
+            <span class="stack-tag">TypeScript</span>
+            <span class="stack-tag">JavaFX</span>
+            <span class="stack-tag">PostgreSQL</span>
+            <span class="stack-tag">JWT</span>
+            <span class="stack-tag">ISO 27001</span>
+          </div>
+
+          <div class="project-roadmap">
+            <div class="roadmap-label">Roadmap</div>
+            <div class="roadmap-items">
+              <span class="roadmap-item">Unit testing</span>
+              <span class="roadmap-item">Selección de tabla</span>
+              <span class="roadmap-item">Soporte CSV / XLS</span>
+              <span class="roadmap-item">Reportes de auditoría</span>
+            </div>
+          </div>
+
+          <div class="project-links" style="margin-top: 1.25rem;">
+            <a href="https://github.com/WilsonGracia/export2bd" target="_blank" class="project-link">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.74-1.33-1.74-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              Ver repo →
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ EXPERIENCE ══ -->
+  <section id="experience">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2>Experiencia</h2>
+    </div>
+    <div class="exp-list">
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-date">Ago 2025 – Nov 2025</div>
+          <div>AnalyticaHub</div>
+        </div>
+        <div>
+          <div class="exp-company">AnalyticaHub</div>
+          <div class="exp-role">Backend Developer</div>
+          <ul class="exp-points">
+            <li>Desarrollo de módulo financiero de Cuentas por Cobrar y Pagar</li>
+            <li>Implementación backend con NestJS, TypeScript, PostgreSQL y TypeORM</li>
+            <li>Diseño de endpoints seguros, validaciones y lógica transaccional</li>
+            <li>Automatización de procesos y optimización de trazabilidad financiera</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-date">Feb 2024 – Jul 2025</div>
+          <div>Centro Educativo San Isidro Labrador</div>
+        </div>
+        <div>
+          <div class="exp-company">Centro Educativo San Isidro Labrador</div>
+          <div class="exp-role">Desarrollador Fullstack</div>
+          <ul class="exp-points">
+            <li>Backend de módulos administrativos y operativos para sistema institucional</li>
+            <li>Modelado de base de datos, consultas optimizadas y estructuras relacionales</li>
+            <li>Desarrollo frontend con HTML, CSS, Java y JavaScript</li>
+            <li>Participación en ciclo completo: análisis, desarrollo, pruebas y entrega</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ CERTIFICATIONS ══ -->
+  <section id="certs">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2>Certificaciones</h2>
+    </div>
+    <div class="certs-grid">
+
+      <a href="assets/certs/CertiProf_Certified ISOIEC_270012022_Lead Auditor_(I27001LA).pdf" target="_blank" class="cert-card">
+        <div class="cert-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div>
+          <div class="cert-name">ISO/IEC 27001:2022 Lead Auditor</div>
+          <div class="cert-id">I27001LA</div>
+          <div class="cert-year">Certiprof · 2026</div>
+          <div class="cert-expiry">Expira: Mar 2029</div>
+          <div class="cert-download">Ver certificado →</div>
+        </div>
+      </a>
+
+      <a href="assets/certs/CertiProf_Certified_ISOIEC_270012022_Internal Auditor_(I27001IA).pdf" target="_blank" class="cert-card">
+        <div class="cert-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div>
+          <div class="cert-name">ISO/IEC 27001:2022 Internal Auditor</div>
+          <div class="cert-id">I27001IA</div>
+          <div class="cert-year">Certiprof · 2026</div>
+          <div class="cert-expiry">Expira: Mar 2029</div>
+          <div class="cert-download">Ver certificado →</div>
+        </div>
+      </a>
+
+      <a href="assets/certs/CertiProf_Certified ISO_IEC 27001_2022 Foundation_(I27001F).pdf" target="_blank" class="cert-card">
+        <div class="cert-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div>
+          <div class="cert-name">ISO/IEC 27001:2022 Foundation</div>
+          <div class="cert-id">I27001F</div>
+          <div class="cert-year">Certiprof · 2025</div>
+          <div class="cert-expiry">Expira: Nov 2028</div>
+          <div class="cert-download">Ver certificado →</div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ══ CONTACT ══ -->
+  <section id="contact">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <h2>Contacto</h2>
+    </div>
+    <div class="contact-inner">
+      <div class="contact-blurb">
+        ¿Tenés un <em>proyecto</em> en mente?<br>
+        Escribime, estoy disponible.
+      </div>
+      <div class="contact-links">
+
+        <a href="https://www.linkedin.com/in/wilsongracia" target="_blank" class="contact-link">
+          <div class="link-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--accent)"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+          </div>
+          <div class="link-info">
+            <div class="link-label">LinkedIn</div>
+            <div class="link-value">linkedin.com/in/wilsongracia</div>
+          </div>
+          <span class="link-arrow">→</span>
+        </a>
+
+        <a href="https://github.com/WilsonGracia" target="_blank" class="contact-link">
+          <div class="link-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--accent)"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.74-1.33-1.74-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </div>
+          <div class="link-info">
+            <div class="link-label">GitHub</div>
+            <div class="link-value">github.com/WilsonGracia</div>
+          </div>
+          <span class="link-arrow">→</span>
+        </a>
+
+        <!-- ══ EMAIL con botón de copiar ══ -->
+        <div class="contact-link contact-link--email">
+          <div class="link-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--accent)"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </div>
+          <a href="mailto:wilsgrac2121@gmail.com" class="link-info link-info--mailto">
+            <div class="link-label">Email</div>
+            <div class="link-value">wilsgrac2121@gmail.com</div>
+          </a>
+          <button class="copy-email-btn" data-email="wilsgrac2121@gmail.com" title="Copiar email" aria-label="Copiar dirección de email">
+            <svg class="icon-copy" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <svg class="icon-check" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:none"><polyline points="20 6 9 17 4 12"/></svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <span class="footer-copy">© 2026 Wilson Andrés Muñoz Gracia — Ingeniería en Sistemas de Información</span>
+    <span class="footer-copy">Diseñado por Wilson Muñoz</span>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // ── Theme Switcher ──
+    const themes = {
+      green: {
+        '--bg': '#0c0f0a', '--surface': '#141710', '--border': '#2a2e24',
+        '--accent': '#b5f23c', '--accent-dim': '#7aab1c',
+        '--text': '#e8eade', '--muted': '#7a8070', '--card': '#171b13'
+      },
+      red: {
+        '--bg': '#0f0a0a', '--surface': '#1a1010', '--border': '#2e2020',
+        '--accent': '#f23c3c', '--accent-dim': '#ab1c1c',
+        '--text': '#ede8e8', '--muted': '#806a6a', '--card': '#1b1313'
+      },
+      mono: {
+        '--bg': '#0a0a0a', '--surface': '#141414', '--border': '#2a2a2a',
+        '--accent': '#e8e8e8', '--accent-dim': '#909090',
+        '--text': '#f0f0f0', '--muted': '#707070', '--card': '#161616'
+      }
+    };
+
+    document.querySelectorAll('.theme-dot').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const t = themes[btn.dataset.theme];
+        if (!t) return;
+        Object.entries(t).forEach(([prop, val]) => {
+          document.documentElement.style.setProperty(prop, val);
+        });
+        document.querySelectorAll('.theme-dot').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+/* ============================================
+   animations.css — Keyframes & responsive
+   ============================================ */
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero-label       { animation: fadeUp 0.6s ease both; animation-delay: 0.1s; }
+.hero-title-role  { animation: fadeUp 0.6s ease both; animation-delay: 0.15s; }
+.hero h1          { animation: fadeUp 0.6s ease both; animation-delay: 0.2s; }
+.hero-description { animation: fadeUp 0.6s ease both; animation-delay: 0.3s; }
+.hero-ctas        { animation: fadeUp 0.6s ease both; animation-delay: 0.4s; }
+.hero-stats       { animation: fadeUp 0.6s ease both; animation-delay: 0.35s; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  nav { padding: 1rem 1.5rem; }
+  .nav-links { display: none; }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 6rem 1.5rem 3rem;
+    gap: 3rem;
+  }
+
+  section { padding: 4rem 1.5rem; }
+
+  .about-grid,
+  .contact-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+
+  .exp-item { grid-template-columns: 1fr; gap: 0.5rem; }
+
+  .projects-grid { grid-template-columns: 1fr; }
+
+  .project-screenshots { grid-template-columns: 1fr; }
+
+  footer {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+}

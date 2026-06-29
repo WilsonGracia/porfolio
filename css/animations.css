@@ -1,0 +1,18 @@
+* {
+  transition:
+    background-color var(--t-base),
+    border-color var(--t-base),
+    color var(--t-base);
+}
+
+.btn,
+.theme-dot,
+.contact-card,
+.copy-email-btn {
+  transition:
+    background-color var(--t-fast),
+    border-color var(--t-fast),
+    transform var(--t-fast),
+    color var(--t-fast),
+    box-shadow var(--t-base);
+}

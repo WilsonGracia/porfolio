@@ -1,0 +1,5 @@
+[data-theme="light"] .theme-dot--light,
+[data-theme="dark"] .theme-dot--dark {
+  border-color: var(--text-primary);
+  border-width: 2px;
+}
